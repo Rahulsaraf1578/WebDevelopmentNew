@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+    /* For navigation to be fixed at top */
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    /* For navation to be fixed at bottom */
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
+li{
+    float: left;
+
+    /* To give border to elements */
+    /* border-right: 1px solid #bbb; */
+}
+
+/* For not applying border to last element */
+/* li:last-child {
+    border-right: none;
+  } */
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* li a:hover{
+    background-color: #111111;
+} */
+
+/* Apply hove on all a except .active */
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #4CAF50;
+
+    /* If we want to do this, it means we are overwriting it and that we have to manually */
+    /* float: right; */
+}

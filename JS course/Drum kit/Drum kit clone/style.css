@@ -1,0 +1,60 @@
+html{
+    font-size: 10px;
+    background: url('./background.jpg') bottom center;
+    background-size: cover;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys{
+    display: flex;
+    flex: 1;
+
+    /* This height is showing effect after we align items or use align items */
+    min-height: 100vh;
+    align-items: center;
+
+    justify-content: center;
+}
+.key{
+    border: .4rem solid black;
+    border-radius: .5rem;
+
+    /* It works outside of the box */
+    margin: 1rem;
+    font-size: 1.5rem;
+
+    /* It works inside the box */
+    padding: 1rem .5rem;
+
+    transform: all 0.7 ease;
+
+    /* Telling width of the box */
+    width: 10rem;
+
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0, 0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+kbd{
+    /* It is showing that alphabet is up and text is down */
+    display: block;
+    font-size: 4rem;
+}
+.sound{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
