@@ -1,0 +1,186 @@
+#sec{
+    padding: 20px 5px 0px 0px;
+    display: flex;
+}
+
+/* First button */
+.btn0{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    
+}
+
+
+.success0 {background-color: #4CAF50;} /* Green */
+.success0:hover {background-color: #46a049;}
+
+.home0 {background-color: #2196F3;} /* Blue */
+.home0:hover {background: #0b7dda;}
+
+.legend0{background-color: #ff9800;} /* Orange */
+.legend0:hover {background: #e68a00;}
+
+.call0 {background-color: #f44336;} /* Red */ 
+.call0:hover {background: #da190b;}
+
+.winner0 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.winner0:hover {background: #ddd;}
+
+
+/* Second button */
+.btn1{
+    border: 1px solid black;
+    background-color: white;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.success1{border-color: #4CAF50; color: #4CAF50;}
+.success1:hover{background: #4CAF50; color:white}
+
+
+.home1 {border-color: #2196F3; color:#2196F3;} /* Blue */
+.home1:hover {background: #0b7dda; color: white;}
+
+.legend1{border-color: #ff9800; color: #ff9800;} /* Orange */
+.legend1:hover {background: #e68a00; color: white;}
+
+.call1 {border-color: #f44336; color: #f44336;} /* Red */ 
+.call1:hover {background: #da190b; color: white;}
+
+.winner1 {border-color: cyan; color: cyan;} /* Gray */ 
+.winner1:hover {background: cyan; color: white;}
+
+/* Third button */
+.button{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 9px #999;
+}
+
+/* Change color of button during hover */
+.button:hover {background-color: #3e8e41}
+
+.button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px#666;
+   transform: translateY(4px);
+}
+
+/* Animated button */
+/* Adding basic property of button */
+.button1 {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Applying some property to Hover text */
+/* Span is used to target specific text */
+.button1 span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+/*Adding arrow and not visible due to opacity is 0  */
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+/* After hover padding from right */
+  .button1:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* Fade effect */
+/* First fade out effect */
+.fade1{
+    border: none;
+    padding: 16px 32px;
+    font-size: 15px;
+    color: white;
+    background-color: #f4511e;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 1;
+    margin: 4px 2px;
+}
+.fade1:hover{
+    opacity: 0.6;
+}
+
+/* Fade in */
+.fade2{
+    border: none;
+    padding: 16px 32px;
+    font-size: 15px;
+    color: white;
+    background-color: #f4511e;
+    text-align: center;
+    transition: 0.4s;
+    opacity: 0.6;
+    margin: 4px 2px;
+}
+.fade2:hover{
+    opacity: 1;
+}
+
+/* Fade in */
+.fade3{
+    border: none;
+    padding: 16px 32px;
+    font-size: 15px;
+    color: black;
+   text-align: center;
+    transition: 0.3s;
+    margin: 4px 2px;
+}
+.fade3:hover{
+    background-color: #3e8e41;
+    color: white;
+}
+
+/* Read more or less button */
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+
+
+/* Loading button */
+.buttonload {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px /* Set a font size */
+  }
