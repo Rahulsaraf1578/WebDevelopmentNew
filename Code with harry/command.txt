@@ -1,0 +1,65 @@
+Inserting data into database
+
+show dbs :- Show all the database
+
+use DATABASE_NAME :- it will create a database of name DATABASE_NAME. And if there is already a database then it will use it
+
+//In this we make collections like:- items here
+//To see items stored in database
+db.items.find( )
+
+// Here we have created a document in database 
+db.items.insertOne({name:"Samsung 30s", price:22000, rating:4.5, qty: 233,sold:98})
+
+//For inserting multiple items at once we use
+db.items.insertMany([{name:"Vivo 30s",price:26000,rating:4.8,qty:133,sold:888},{name:"Moto 30s",price:29000,rating:3.5,qty:23,sold:988}])
+
+//We do not have to follow a particular format for entering data in mongodb
+db.items.insertOne({name:"Realme 30s", price:122000, rating:1.5, qty: 2233,sold:2298,isBig:"true"})
+
+
+
+//-----------------------------------------------------------
+
+///We can apply filter for searching items in database
+
+//It will give object whose rating is equal to 3.5
+db.items.find({rating:3.5})
+
+// To find all the object whose rating is greater than 3.5
+db.items.find({rating:{$gte:3.5}})
+ // gte :- greater than equal 
+ // lt : less than
+
+ // Using AND(,) operator
+db.items.find({rating:{$gte:3.5},price:{$gt:26000}})
+
+//Using OR operator
+db.items.find({$or:[{rating:{$lt:3.5},price:{$gt:11000}}]})
+
+
+//-----------------------------------------------------------
+
+// For deleting items
+
+//If there are multiple items with this data then it will delete first items
+db.items.deleteOne({price:122000})
+
+// For deleting multiple document at same time in items we will use :-
+db.items.deleteMany({price:12000})
+
+//------------------------------------------------------------------------------
+
+// For updating data
+//For creating another collection in database
+
+db.anotherCollection.insertOne({a:80})
+
+// For updating :- here price will update to 2 
+db.items.updateOne({name: "Moto 30s"},{$set:{price:2}})
+
+//if we want to upadate multiple document then we will use updateMany
+db.items.updateOne({name: "Moto 30s"},{$set:{price:2,rating:1}})
+
+
+
